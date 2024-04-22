@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моє портфоліо</title>
+    <link rel="stylesheet" href="/style.css"> 
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black; /* Added black background */
+            color: white; /* Added white text color */
+        }
+        .header {
+            background-image: url('background.jpg');
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .portfolio-info, .portfolio-photos, .portfolio-video, .portfolio-contact {
+            padding: 20px;
+        }
+        .menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: black;
+            padding: 10px 20px;
+            color: white;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#about">about </a>
+        <a href="#photos">works</a>
+        <a href="#contact">contact</a>
+    </div>
+    <div id="about" class="portfolio-info">
+        <h1>ABOUT</h1>
+        <img src="images/ya.jpg" alt="я" width="400">
+        <p>Hi everyone, I'm Marta, a graphic designer and illustrator. Professionally work in the artistic field for 4 years
+            So let's see my works</p>
+        <p> Всім привіт, я Марта графічна дизайнерка і ілюстраторка. Професійно в сфері мистецтва 4 роки. Тож показую вам свої роботи</p>
+        
+        <p><b> WORK AT/ ПРАЦЮЮ В :</b> </p>
+        <ul>
+            <li>ILLUSTRATOR</li>
+            <li>PHOTOSHOP</li>
+            <li>PROCREATE</li>
+            <li>INDESIGN</li>
+            <li>FIGMA</li>
+        </ul>
+    </div>
+    <div id="photos" class="portfolio-photos">
+        <h1>ILLUSTRATION</h1>
+        <img src="images/a.PNG" alt="стікери" width="400">
+        <img src="images/b.jpg" alt="графіка" width="400">
+        <img src="images/c.PNG" alt="постер" width="400">
+        <img src="images/d.PNG" alt="олія" width="400">
+    </div>
+    <div id="video" class="portfolio-video">
+        <h1>ANIMATION</h1>
+        <video width="200" controls> <!-- Added controls attribute -->
+            <source src="/images/v.mov">
+        </video>
+    </div>
+    <div id="contact" class="portfolio-contact">
+        <h1>CONTACTS</h1>
+    </div >
+        <p>Gmail:  tsybakmarta@gmail.com </p>
+        <p>Phone  +380 (97) 875 05 43</p>
+        <a href="https://www.instagram.com/tsybak.m?igsh=MWlrbTh6YWZzcXRnMg==" target="_blank">Instagram</a>
+    </div>
+</body>
+</html>
